@@ -9,6 +9,7 @@ export default Route.extend({
         category: 'UI',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non necessitatibus aspernatur est culpa obcaecati ut quos at.',
         image: 'http://denistoledo.com.br/images/portfolio/ui-v2v.jpg',
+        alt: 'alternative text',
         skills: 'html, css'
       },
       {
@@ -17,6 +18,7 @@ export default Route.extend({
         category: 'Frameworks',
         description: 'Non necessitatibus aspernatur est culpa obcaecati ut quos at. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         image: 'http://denistoledo.com.br/images/portfolio/ember-js-super-rentals.jpg',
+        alt: 'alternative text',
         skills: 'javascript, ember.js'
       },
       {
@@ -25,6 +27,7 @@ export default Route.extend({
         category: 'Design',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non necessitatibus aspernatur est culpa obcaecati ut quos at.',
         image: 'http://denistoledo.com.br/images/portfolio/logo-blue-sky-drone.jpg',
+        alt: 'alternative text',
         skills: 'adobe illustrator'
       },
     ]
