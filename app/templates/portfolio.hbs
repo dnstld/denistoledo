@@ -1,1 +1,9 @@
-portfolio
+{{#each model as |portfolio|}}
+  <article>
+    <h1>{{portfolio.title}}</h1>
+    <h3>{{portfolio.category}}</h3>
+    <img src="{{portfolio.image}}" alt="">
+    <p>{{portfolio.description}}</p>
+    <span>{{portfolio.skills}}</span>
+  </article>
+{{/each}}
