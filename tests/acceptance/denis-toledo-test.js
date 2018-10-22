@@ -52,7 +52,7 @@ module('Acceptance | denis toledo', function(hooks) {
   test('should list the portfolio', async function(assert) {
     await visit('/');
     assert.equal(
-      findAll('[data-test-portfolio-list]').length,
+      findAll('[data-test-portfolio-listing]').length,
       3,
       'should display 3 works'
     );
