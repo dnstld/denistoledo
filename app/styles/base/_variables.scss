@@ -1,0 +1,29 @@
+// grey pallet
+$grey-darkest: #4b4a4a;
+$grey-darker: #666;
+$grey-dark: #999;
+$grey-light: #c8c8cd;
+$grey-lighter: #eaebeb;
+$grey-lightest: #f2f2f2;
+
+// static colors
+$color-success: #6AA530;
+$color-warning: #E9C83F;
+$color-danger: #E02D03;
+$color-info: #17a2b8;
+
+// main colors
+$color-text: #fff;
+$color-bg: #000;
+$color-primary: #222;
+$color-secondary: #444;
+$color-tertiary: #666;
+
+// css variables
+:root {
+  --color-text: #{$color-text};
+  --color-bg: #{$color-bg};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
+}

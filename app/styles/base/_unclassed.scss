@@ -1,0 +1,16 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 120%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow: hidden;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

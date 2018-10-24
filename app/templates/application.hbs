@@ -1,15 +1,17 @@
-<nav>
-  {{#link-to "portfolio" data-test-link-portfolio}}
-    Portfolio
-  {{/link-to}}
-  {{#link-to "about" data-test-link-about}}
-    About
-  {{/link-to}}
-  {{#link-to "contact" data-test-link-contact}}
-    Contact
-  {{/link-to}}
-</nav>
-
 <main>
-  {{outlet}}
+  <nav>
+    {{#link-to "portfolio" data-test-link-portfolio}}
+      Portfolio
+    {{/link-to}}
+    {{#link-to "about" data-test-link-about}}
+      About
+    {{/link-to}}
+    {{#link-to "contact" data-test-link-contact}}
+      Contact
+    {{/link-to}}
+  </nav>
+
+  <section>
+    {{outlet}}
+  </section>
 </main>
