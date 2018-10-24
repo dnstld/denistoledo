@@ -1,0 +1,21 @@
+.app-navigation {
+  height: 10vh;
+
+  > .menu {
+    > .title {}
+    > .item {
+      > .link {}
+    }
+  }
+}
+.app-content {
+  height: 90vh;
+  overflow: auto;
+}
+
+.portfolio-header {
+  flex-shrink: 0;
+  background: white;
+  color: black;
+  height: 40vh;
+}

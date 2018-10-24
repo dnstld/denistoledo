@@ -1,17 +1,39 @@
 <main>
-  <nav>
-    {{#link-to "portfolio" data-test-link-portfolio}}
-      Portfolio
-    {{/link-to}}
-    {{#link-to "about" data-test-link-about}}
-      About
-    {{/link-to}}
-    {{#link-to "contact" data-test-link-contact}}
-      Contact
-    {{/link-to}}
+  <nav class="app-navigation">
+    <ul class="menu">
+      <h1 class="title">Denis Toledo</h1>
+
+      <li class="item">
+        {{#link-to
+          "portfolio" 
+          class="link" 
+          data-test-link-portfolio=""
+        }}
+          Portfolio
+        {{/link-to}}
+      </li>
+      <li class="item">
+        {{#link-to 
+          "about" 
+          class="link" 
+          data-test-link-about=""
+        }}
+          About
+        {{/link-to}}
+      </li>
+      <li class="item">
+        {{#link-to 
+          "contact" 
+          class="link" 
+          data-test-link-contact=""
+        }}
+          Contact
+        {{/link-to}}
+      </li>
+    </ul>
   </nav>
 
-  <section>
+  <section class="app-content full-container">
     {{outlet}}
   </section>
 </main>
