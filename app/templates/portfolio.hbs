@@ -1,8 +1,23 @@
-<div class="full-container portfolio-header">
-  <header class="container header">
-    I am a front-end developer, an enthusiast User Experience designer, a specialist User Interface designer and I also have a vast experience with graphic design.
+<div class="portfolio-header">
+  <header class="header">
+    <h1 class="title">
+      I am a front-end developer, an enthusiast user experience designer, a specialist user interface designer and also a experiente graphic designer.
+    </h1>
   </header>
 </div>
+
+<section class="portfolio-filter">
+  <div class="filter">
+    <span class="label">Sort portfolio by:</span>
+    <select name="" class="select" id="">
+      <option value="" selected>All works</option>
+      <option value="">Front-end</option>
+      <option value="">UX/UI</option>
+      <option value="">Graphic design</option>
+    </select>
+  </div>
+</section>
+
 {{#each model as |portfolioData|}}
   {{portfolio-listing portfolio=portfolioData}}
 {{/each}}

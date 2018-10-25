@@ -1,3 +1,4 @@
+/* media queries */
 @mixin for-tablet-portrait-up {
   @media (min-width: 600px) {
     @content;
@@ -22,4 +23,30 @@
   @media (min-width: $size) {
     @content;
   }
+}
+/* alignment */
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin alignXY {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin alignX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin alignY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin letter-spacing($value: 0.0625rem) {
+  letter-spacing: $value;
 }
