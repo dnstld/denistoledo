@@ -1,10 +1,10 @@
 // grey pallet
-$grey-darkest: #4b4a4a;
-$grey-darker: #666;
-$grey-dark: #999;
-$grey-light: #c8c8cd;
-$grey-lighter: #eaebeb;
-$grey-lightest: #f2f2f2;
+$grey-darkest: #24272C;
+$grey-darker: #67727D;
+$grey-dark: #A9B4C2;
+$grey-light: #CBD3DB;
+$grey-lighter: #E4ECF4;
+$grey-lightest: #F4F7FB;
 
 // static colors
 $color-success: #6AA530;
@@ -13,8 +13,8 @@ $color-danger: #E02D03;
 $color-info: #17a2b8;
 
 // main colors
-$color-text: #333;
-$color-bg: #fdfdfd;
+$color-text: $grey-darkest;
+$color-bg: #fff;
 $color-primary: #222;
 $color-secondary: #444;
 $color-tertiary: #666;

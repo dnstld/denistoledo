@@ -6,11 +6,18 @@
   justify-content: space-between;
   position: relative;
   padding: 0 .5rem 0 1.5rem;
-  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+  background-color: $grey-darkest;
+  color: $grey-lightest;
 
   > .title {
     @include letter-spacing;
     text-transform: uppercase;
+
+    @include for-tablet-landscape-up {
+      @include alignXY;
+      font-size: $font-huge;
+      font-weight: 200;
+    }
 
     > .name {
       display: none;
@@ -24,6 +31,10 @@
     display: flex;
     align-items: center;
     height: 100%;
+
+    @include for-tablet-landscape-up {
+      margin-left: auto;
+    }
 
     > .link {
       display: flex;
@@ -69,6 +80,13 @@
     background-position: center calc(10vh + 1.5rem);
     background-attachment: fixed;
 
+    @include for-tablet-portrait-up {
+      background-size: 12vh;
+    }
+    @include for-tablet-portrait-up {
+      background-size: 15vh;
+    }
+
     > .title {
       @include letter-spacing;
       text-align: center;
@@ -77,7 +95,18 @@
       font-size: $font-large;
       line-height: 150%;
       text-transform: uppercase;
-      background: linear-gradient(to top, rgba(255, 255, 255, 1) 5%,rgba(255, 255, 255, 0) 90%);
+      background: linear-gradient(to top, rgba(255, 255, 255, 1) 10%,rgba(255, 255, 255, 0) 90%);
+
+      @include for-tablet-portrait-up {
+        width: 80vw;
+        font-size: $font-huge;
+        padding: calc(12vh + 3rem) 1.5rem 1.5rem 1.5rem;
+      }
+      @include for-tablet-portrait-up {
+        width: 60vw;
+        font-size: $font-huge-x;
+        padding: calc(15vh + 3rem) 1.5rem 1.5rem 1.5rem;
+      }
     }
   }
 }
