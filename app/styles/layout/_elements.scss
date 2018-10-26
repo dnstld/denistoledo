@@ -1,26 +1,24 @@
 .app-header {
   box-sizing: border-box;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-
-  &::before {
-    content: "";
-    height: 1px;
-    position: absolute;
-    left: 1.5rem;
-    right: 1.5rem;
-    bottom: 0;
-    background-color: $grey-light;
-  }
+  padding: 0 .5rem 0 1.5rem;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
 
   > .title {
     @include letter-spacing;
     text-transform: uppercase;
-    font-weight: 200;
-    margin-left: 1.5rem;
+
+    > .name {
+      display: none;
+
+      @include for-tablet-portrait-up {
+        display: inline;
+      }
+    }
   }
   > .nav {
     display: flex;
@@ -33,10 +31,9 @@
       height: inherit;
       padding-left: .5rem;
       padding-right: .5rem;
-      margin-left: 0;
+      margin-right: .5rem;
       user-select: none;
       position: relative;
-      font-size: $font-small;
 
       &::before {
         content: attr(data-label);
@@ -46,13 +43,15 @@
         left: 50%;
         transform: translateX(-50%);
       }
+      &.active {
+      }
     }
   }
 }
 
 .app-content {
   @extend .full-container;
-  height: 90vh;
+  height: 92vh;
   overflow: auto;
 }
 
@@ -95,6 +94,8 @@
 
     > .select {
       font-size: inherit;
+      padding: .5rem 0;
+      border: 1px solid $grey-lighter;
 
       &:focus {
         outline: 0;
