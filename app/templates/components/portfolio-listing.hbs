@@ -1,14 +1,28 @@
-<h1 data-test-portfolio-title>{{portfolio.title}}</h1>
+<div class="imgContainer">
+  <img 
+    class="img"
+    src={{portfolio.image}}
+    alt={{portfolio.alt}}
+    data-test-portfolio-img
+  >
+</div>
 
-<h3 data-test-portfolio-category>{{portfolio.category}}</h3>
+<header class="header">
+  <div class="img"></div>
 
-<img 
-  class="img"
-  src={{portfolio.image}}
-  alt={{portfolio.alt}}
-  data-test-portfolio-img
->
+  <div class="info">
+    <h1 class="title" data-test-portfolio-title>{{portfolio.title}}</h1>
+    <h2 class="category" data-test-portfolio-category>{{portfolio.category}}</h2>
+  </div>
+</header>
 
-<p data-test-portfolio-description>{{portfolio.description}}</p>
+<p class="description" data-test-portfolio-description>{{portfolio.description}}</p>
 
-<span data-test-portfolio-skills>{{portfolio.skills}}</span>
+<span class="skills" data-test-portfolio-skills>{{portfolio.skills}}</span>
+
+{{#link-to 
+  "about" 
+  class="btnsee" 
+}}
+  See more
+{{/link-to}}

@@ -18,6 +18,8 @@
   </div>
 </section>
 
-{{#each model as |portfolioData|}}
-  {{portfolio-listing portfolio=portfolioData}}
-{{/each}}
+<ul class="portfolio-list">
+  {{#each model as |portfolioData|}}
+    {{portfolio-listing portfolio=portfolioData}}
+  {{/each}}
+</ul>

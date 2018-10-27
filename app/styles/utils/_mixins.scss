@@ -50,3 +50,17 @@
 @mixin letter-spacing($value: 0.0625rem) {
   letter-spacing: $value;
 }
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
